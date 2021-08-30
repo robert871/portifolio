@@ -1,0 +1,276 @@
+body,textarea,p, h1, h2,h3{
+    margin: 0;
+    font-family: Roboto;
+}
+h2{
+    font-size: 30px;
+}
+nav#nav_list{
+    background-color: #ed1e24;/* red */
+    color: #fff;
+    padding: 0 15px;
+    height: 60px;
+
+}
+#nav_list .ul,#nav_list li ,#nav_list h2 ,#nav_list img{
+    display: inline-block;
+    
+}nav#nav_list h2 {
+    margin-left: 65px;
+    line-height: 60px;
+    margin-left: 60px;
+    
+}
+.hamb{
+    color:#fff;
+    position: absolute;
+    font-size: 20pt;
+    top :10px;
+    right:20px;
+border: none;
+background-color: #ed1e24;
+display: none;
+}.close{
+     color:#fff;
+    font-size: 15pt;
+    top :10px;
+    right:20px;
+   border: none;
+   background-color: #ed1e24;
+   visibility: hidden;
+
+}.close1{
+    color:#fff;
+   font-size: 15pt;
+   top :10px;
+   right:20px;
+  border: none;
+  background-color: #ed1e24;
+  visibility:visible;
+
+}
+#nav_list img{
+    height: 40px;
+    transform: rotate(45deg);
+    position: absolute;
+    top:8px;
+}
+#nav_list ul{
+   float: right;
+   height:30px ;
+   margin: 0;
+   margin-top: 22px;
+   align-items: flex-end;
+   width: 50vh;
+}
+li{
+    justify-content: space-between;
+    margin:0 10px;
+
+} 
+ li:hover{
+    border-bottom: solid 2px white;
+    cursor: pointer;
+}
+h2:hover{
+    cursor: pointer;
+}
+#banner h2{
+    color: #fff;
+    text-align: center;
+    
+   
+}
+#banner{
+    background-image: url(./img/bg-projeto.jpg) ;
+    text-align: center;
+    height:70vh;
+   padding-top: 20px;
+    background-size: cover;
+    
+}
+#banner img{
+height: 300px;
+background-color: #ed1e24;
+border-radius: 50%;
+border:black solid;
+margin-top: -10;
+
+}
+#name:hover{
+    cursor: pointer;
+    background-color: #ed1e24;
+}
+#name{
+    color: #fff;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px 4px;
+}
+#about{
+    background-color: #ed1e24;
+    color: #fff;
+    font-size: 30pt;
+    text-align: center;
+    padding: 80px;
+    padding-bottom: 100px;
+    margin-top: -20px;
+}
+/* skills*/
+h3{
+    text-align: center;
+}
+#ski{
+    display:flex;
+    direction: row;
+    width: 100%;
+  
+}
+.container{
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   padding-top: 120px;
+   text-align: center;
+   justify-content: space-between;
+}
+#ski img{
+    width:80%;
+    box-shadow: 2px 2px 8px red;
+    margin-bottom: 20px;
+}
+.sec{
+    
+    text-align: center;
+
+}
+.sec1{
+    
+    text-align: center;
+    
+}
+body{
+
+    
+    width: 100%;
+    min-width: 300px;
+}
+/*job*/
+.jobs{
+    display: flex;
+    direction: row;
+    padding-bottom: 8%;
+    justify-content: space-around;
+
+}
+.jobs img{
+    width: 25%;
+    box-shadow: 2px 2px 8px red;
+}
+#job h1{
+    font-size:30pt;
+    text-align: center;
+    padding-bottom: 8%;
+    padding-top: 5%;
+    
+
+
+}.close:hover,.close1:hover,.hamb:hover{
+    cursor: pointer;
+}
+footer{
+    
+    background-color: #ed1e24;
+    text-align: center;
+    margin-bottom: 50px;
+}
+footer img{
+    width: 20%;
+}
+footer h2{
+color: #fff;
+}
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    width: 40%;
+}
+textarea {display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 15px;
+margin-bottom: 20px;
+width: 40%;
+}
+
+.ul1{
+    visibility: visible;
+    width: fit-content;
+    background-color: #ed1e24;
+    position: absolute;
+    left: -2px;
+    top: 30px;
+    width: 50vh;
+    margin-bottom: 22px;
+    
+
+    
+    
+}
+
+    @media(max-width:601px) {
+        .ul{
+            width: 0;
+            visibility: hidden;
+            height: 0;
+        }.hamb{
+            display:flex;
+        }
+        h2{
+            font-size: 25px;
+        }
+        
+    }@media(max-width:465px) {
+    #ski {
+        display: flex;
+        flex-direction: column;
+        width:60%;
+        margin-left: 20%;
+        text-align: center;}
+    p{
+        font-size: 15pt;
+    }}@media(max-width:350px) {
+       #name{
+           font-size: 8pt;
+       }h2{
+           font-size: 10;
+       }#banner img{height: 250px;
+       }
+       .ul{
+           display: none;
+       }
+
+       }
+       
+       @media(max-width:300px) {
+        #name{
+            font-size: 8pt;
+        }h2{
+            font-size: 10;
+        }#banner img{height: 200px;
+        }
+        ul{
+            display: none;
+
+        }#hamb{
+            display: none;
+        }
+ 
+        
+     }
